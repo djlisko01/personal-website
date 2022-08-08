@@ -1,0 +1,23 @@
+.infoCircle {
+  border: solid black 1px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillDescription {
+  height: 200px;
+  border: solid black 1px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skillCircleBlock {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,6 +1,7 @@
 import "./App.css";
 import HomeView from "./components/pages/HomeView";
 import NavBar from "./components/NavBar";
+import AboutView from "./components/pages/AboutView";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <NavBar />
 
         <HomeView />
+        <AboutView />
       </div>
     </div>
   );
