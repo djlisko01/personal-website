@@ -2,6 +2,7 @@ import "./App.css";
 import HomeView from "./components/pages/HomeView";
 import NavBar from "./components/NavBar";
 import AboutView from "./components/pages/AboutView";
+import ResumeView from "./components/pages/ResumeView";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 
         <HomeView />
         <AboutView />
+        <ResumeView />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 .homepage {
-  background-image: url("./public/water_sprite_lake.JPG");
+  background-image: url("./public/imgs/water_sprite_lake.JPG");
   background-size: cover;
   height: 100vh;
   color: white;
@@ -15,4 +15,10 @@
 
 .aboutMe {
   height: 100vh;
+}
+
+.skillCircleBlock svg {
+  width: 60px;
+  height: 60px;
+  fill: white;
 }
