@@ -1,6 +1,6 @@
 const NavBar = () => {
   return (
-    <div classNameName="nav-bar">
+    <div className="nav-bar">
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="Go">
@@ -25,7 +25,7 @@ const NavBar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="Go">
+                <a className="nav-link" href="#aboutMe">
                   About Me
                 </a>
               </li>

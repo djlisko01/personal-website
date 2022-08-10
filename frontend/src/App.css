@@ -17,8 +17,23 @@
   height: 100vh;
 }
 
-.skillCircleBlock svg {
-  width: 60px;
-  height: 60px;
+.contactInfo .infoCircle:hover {
+  background-color: #adb5bd;
+  border-color: #adb5bd;
   fill: white;
+}
+
+.contactInfo .infoCircle {
+  position: relative;
+}
+/* 
+.contactInfo .infoCircle:hover::after {
+  content: "Contact Me";
+  position: absolute;
+  left: 60px;
+} */
+
+.skillCircleBlock svg {
+  height: 50px;
+  width: 50px;
 }

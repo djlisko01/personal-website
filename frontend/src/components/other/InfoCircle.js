@@ -1,12 +1,22 @@
 import "./other.css";
 import "../../App.css";
-const InfoCircle = ({ item, height, width, bgColor }) => {
+const InfoCircle = ({ item, height, width, bgColor, newState, setState }) => {
+  const onHover = () => {
+    setState(newState);
+  };
+
   return (
     <div
       className="infoCircle"
       style={{ height: height, width: width, backgroundColor: bgColor }}
     >
-      <div>{item}</div>
+      {setState && newState ? (
+        <div onMouseOver={() => onHover()}>
+          <div>{item}</div>
+        </div>
+      ) : (
+        <div>{item}</div>
+      )}
     </div>
   );
 };
