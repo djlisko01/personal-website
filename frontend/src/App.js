@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <div className="container-fluid">
         <NavBar />
-
         <HomeView />
         <AboutView />
         <ResumeView />

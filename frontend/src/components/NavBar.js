@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <div className="nav-bar">
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg primaryBgColor">
         <div className="container-fluid">
           <a className="navbar-brand" href="Go">
             Navbar

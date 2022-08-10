@@ -42,7 +42,7 @@ const AboutView = () => {
             sequi ipsam consequatur. Est, consequatur? Voluptatibus?
           </p>
 
-          <div id="skills">
+          <div id="skills" className="row">
             <h2 className="mt-5">Full Stack Skills</h2>
             <div className="skillCircleBlock mt-3 col-lg-8">
               <InfoCircle
