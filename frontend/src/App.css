@@ -29,12 +29,20 @@
   fill: white;
 }
 
-/* 
+.socialContainer {
+  position: relative;
+}
+.contactInfo {
+  position: sticky;
+  top: 40vh;
+  padding-left: 40%;
+}
+
 .contactInfo .infoCircle:hover::after {
   content: "Contact Me";
   position: absolute;
-  left: 60px;
-} */
+  left: 190px;
+}
 
 .skillCircleBlock svg {
   height: 50px;
@@ -67,7 +75,7 @@
     position: absolute;
     width: 2px;
     background-color: orange;
-    left: 57.85%;
+    left: 58.23%;
   }
 
   #timeline .jobBox {

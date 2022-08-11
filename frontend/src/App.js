@@ -12,7 +12,7 @@ function App() {
         <NavBar />
         <HomeView />
         <div className="row">
-          <div className="col-md-3 mt-5">
+          <div className="col-md-3 mt-5 socialContainer">
             <SocialLinks />
           </div>
           <div className="col-md-8">
