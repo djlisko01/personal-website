@@ -4,7 +4,7 @@ import { linkedInSVG, twitterSVG, githubSVG, emailSVG } from "../public/icons";
 const SocialLinks = () => {
   const contactCircles = { height: "50px", width: "50px" };
   return (
-    <div className="col-md-3 contactInfo" style={{ justifyContent: "center" }}>
+    <div className="contactInfo" style={{ justifyContent: "center" }}>
       <a
         href="https://www.google.com"
         target="_blank"
