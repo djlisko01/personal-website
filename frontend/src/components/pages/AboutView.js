@@ -1,5 +1,4 @@
 import InfoCircle from "../other/InfoCircle";
-
 import { useState, useEffect } from "react";
 import {
   computerSVG,
@@ -28,7 +27,7 @@ const AboutView = () => {
   }, [currentSkill]);
 
   return (
-    <div className="container aboutMe mt-5">
+    <div className="container aboutMe mt-5 pt-5" id="about-me">
       <div className="row">
         <h2>About Me</h2>
         <p>

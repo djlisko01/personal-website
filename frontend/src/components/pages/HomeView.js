@@ -1,6 +1,6 @@
 const HomeView = () => {
   return (
-    <div className="homepage">
+    <div className="homepage" id="home-page">
       <div className="bgColor">
         <div className="row justify-content-center">
           <div className="col-6" id="mainBox">

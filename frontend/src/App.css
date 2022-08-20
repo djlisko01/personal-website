@@ -5,6 +5,10 @@
   color: white;
 }
 
+.aboutMe {
+  height: 100vh;
+}
+
 .primaryBgColor {
   background-color: white;
 }
@@ -65,9 +69,14 @@
 @media only screen and (min-width: 768px) {
   #timeline {
     overflow-y: scroll;
+    scrollbar-width: none;
     overflow-x: hidden;
     padding: 0 1%;
     height: 100vh;
+  }
+
+  #timeline::-webkit-scrollbar {
+    display: none;
   }
   #timeline::before {
     content: "";
@@ -75,7 +84,7 @@
     position: absolute;
     width: 2px;
     background-color: orange;
-    left: 58.23%;
+    left: 49.95%;
   }
 
   #timeline .jobBox {
