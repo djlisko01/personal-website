@@ -144,3 +144,14 @@
   transform: translateY(-20px);
   box-shadow: 10px 15px rgba(245, 239, 239, 0.7);
 }
+
+/* Main Form */
+
+.main-form label {
+  display: block;
+  margin: 10px;
+}
+
+.main-form h6 {
+  font-weight: bolder;
+}
