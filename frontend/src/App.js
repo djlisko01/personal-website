@@ -12,11 +12,14 @@ import ContactView from "./components/mainPages/ContactView";
 import EditProfileView from "./components/editPages/EditProfileView";
 import EditMain from "./components/editPages/EditMain";
 import EditProjects from "./components/editPages/EditProjects";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import EditResume from "./components/editPages/EditResume";
 
+// External Packages
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+
 function App() {
+  const [showModal, setShowModal] = useState(false);
   const main = (
     <div>
       <NavBar />
@@ -46,7 +49,12 @@ function App() {
             <Route path="/" exact element={main} />
             <Route path="edit-profile" element={<EditProfileView />}>
               <Route path="projects" element={<EditProjects />} />
-              <Route path="main-content" element={<EditMain />} />
+              <Route
+                path="main-content"
+                element={
+                  <EditMain showModal={showModal} setShowModal={setShowModal} />
+                }
+              />
               <Route path="resume" element={<EditResume />} />
             </Route>
           </Routes>

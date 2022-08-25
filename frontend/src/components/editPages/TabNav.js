@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function TabNav() {
   return (
     <div id="tab-nav">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
+      <ul className="nav nav-tabs">
+        <li className="nav-item">
           <Link
             aria-current="page"
             className="nav-link active"

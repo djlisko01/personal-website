@@ -13,7 +13,7 @@ const EditProfileView = () => {
     <div id="edit-profile" className="container pt-5">
       <div className="row">
         <div className="col-2">Menu</div>
-        <div className="col-8">
+        <div className="col-10">
           <TabNav mb-5 />
           <Outlet />
         </div>
