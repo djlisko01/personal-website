@@ -39,14 +39,13 @@
 .contactInfo {
   position: sticky;
   top: 40vh;
-  padding-left: 40%;
 }
 
-.contactInfo .infoCircle:hover::after {
+/* .contactInfo .infoCircle:hover::after {
   content: "Contact Me";
   position: absolute;
   left: 190px;
-}
+} */
 
 .skillCircleBlock svg {
   height: 50px;
@@ -106,7 +105,7 @@
     width: 20px;
     background-color: orange;
     position: absolute;
-    right: -31px;
+    right: -52px;
     border-radius: 50%;
     top: 0;
   }
@@ -116,7 +115,7 @@
     width: 20px;
     background-color: orange;
     position: absolute;
-    left: -31px;
+    left: -52px;
     top: 0;
     border-radius: 50%;
   }
@@ -232,6 +231,7 @@
   gap: 10px;
   flex-wrap: wrap;
 }
+
 .skill-container {
   border-radius: 10px;
   background-color: rgba(25, 130, 196, 0.3);

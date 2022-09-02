@@ -2,7 +2,7 @@ import tmpImg from "../../public/imgs/water_sprite_lake.JPG";
 
 const ProjectCard = ({ isEditing }) => {
   return (
-    <div className="card col-md-3 m-md-3" style={{ width: "18rem" }}>
+    <div className="card col-md-3 m-md-1" style={{ width: "18rem" }}>
       {!isEditing ? (
         <img src={tmpImg} className="card-img-top pt-2" alt="..." />
       ) : (

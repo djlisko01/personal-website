@@ -4,7 +4,13 @@ const ContactView = () => {
   return (
     <div className="ContactView" id="contact-me">
       <h2>Get to know me better!</h2>
-      <SocialLinks />
+      <SocialLinks
+        inlineStyle={{
+          flexDirection: "none",
+          gap: 50,
+          justifyContent: "center",
+        }}
+      />
     </div>
   );
 };

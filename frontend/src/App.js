@@ -6,7 +6,7 @@ import AboutView from "./components/mainPages/AboutView";
 import ResumeView from "./components/mainPages/ResumeView";
 import ProjectsView from "./components/mainPages/ProjectsView";
 import SocialLinks from "./components/SocialLinks";
-import ContactView from "./components/mainPages/ContactView";
+import LoginView from "./components/editPages/LoginView";
 
 // Edit Page Components
 import EditProfileView from "./components/editPages/EditProfileView";
@@ -28,15 +28,15 @@ function App() {
         <div className="col-md-2 mt-5 socialContainer">
           <SocialLinks />
         </div>
-        <div className="col-md-8">
-          <AboutView />
-          <ResumeView />
+
+        <div className="col-md-10">
+          <div className="col-10">
+            <AboutView />
+            <ResumeView />
+          </div>
+          <ProjectsView />
+          <a href="/login"> Edit Profile</a>
         </div>
-      </div>
-      <div className="ms-5 ps-5">
-        <ProjectsView />
-        <ContactView />
-        <a href="/edit-profile/main-content"> Edit Profile</a>
       </div>
     </div>
   );
@@ -47,6 +47,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" exact element={main} />
+            <Route path="login" element={<LoginView />} />
             <Route path="edit-profile" element={<EditProfileView />}>
               <Route path="projects" element={<EditProjects />} />
               <Route

@@ -1,10 +1,10 @@
 import InfoCircle from "./other/InfoCircle";
 import { linkedInSVG, twitterSVG, githubSVG, emailSVG } from "../public/icons";
 
-const SocialLinks = () => {
+const SocialLinks = ({ inlineStyle }) => {
   const contactCircles = { height: "50px", width: "50px" };
   return (
-    <div className="contactInfo" style={{ justifyContent: "center" }}>
+    <div className="contactInfo" style={inlineStyle}>
       <a
         href="https://www.google.com"
         target="_blank"
@@ -50,6 +50,14 @@ const SocialLinks = () => {
       </a>
     </div>
   );
+};
+
+SocialLinks.defaultProps = {
+  inlineStyle: {
+    justifyContent: "center",
+    flexDirection: "column",
+    paddingLeft: "40%",
+  },
 };
 
 export default SocialLinks;
