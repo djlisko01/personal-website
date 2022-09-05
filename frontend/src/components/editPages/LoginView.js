@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function LoginView() {
+function LoginView({ runFetch }) {
   const [userCred, setUserCred] = useState({ username: "", password: "" });
 
   const onKey = (event) => {
@@ -9,23 +9,17 @@ function LoginView() {
     setUserCred({ ...userCred, [name]: value });
   };
 
-  const onSubmit = (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
+    const targetName = `user/${event.target.name}`;
 
     if (event.target.name === "clear-content") {
       setUserCred({ username: "", password: "" });
     } else {
-      fetch("http://localhost:9000/api/login/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(userCred),
-      })
-        .then((res) => res.json())
-        .then((data) => console.log(data));
+      console.log("===> userCred", userCred);
+      const res = await runFetch(targetName, userCred);
+      console.log("res==>", res);
     }
-    console.log(userCred);
   };
 
   return (
@@ -50,8 +44,11 @@ function LoginView() {
             value={userCred.password}
             onChange={onKey}
           />
-          <button type="submit" onClick={onSubmit}>
+          <button name="login" type="submit" onClick={onSubmit}>
             Log In
+          </button>
+          <button type="create-user" name="create" onClick={onSubmit}>
+            Create User
           </button>
           <button name="clear-content" onClick={onSubmit}>
             Clear

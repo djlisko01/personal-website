@@ -1,12 +1,28 @@
 import express from "express";
-import { getUser } from "../dao/userDAO.js";
+import { userLogin, createUser } from "../dao/userDAO.js";
 const router = express.Router(); // Get access to the express router.
+const LOGIN_COLLECTION = "user_login";
 
-router.route("/login").post(async (req, res) => {
+router.route("/user/login").post(async (req, res) => {
   console.log("Logging In...");
-  const { username, password } = req.body;
-  getUser(username, password);
-  res.send({ res: "Hello" });
+
+  let data = await userLogin(LOGIN_COLLECTION, req.body);
+
+  if (data) {
+    data["isUsername"] = true;
+
+    res.send(data);
+  } else {
+    res.send({ isUsername: false });
+  }
 });
 
+router.route("/user/create").post(async (req, res) => {
+  console.log("Creating User...");
+  let results = { userCreated: false, passwordMatch: false };
+
+  const userCreated = await createUser(LOGIN_COLLECTION, req.body);
+  results["userCreated"] = userCreated;
+  res.send(results);
+});
 export default router;

@@ -20,6 +20,19 @@ import { useState } from "react";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
+
+  const runFetch = async (targetName, data, method = "POST") => {
+    const res = await fetch(`http://localhost:9000/api/${targetName}/`, {
+      method: method,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    return await res.json();
+  };
+
   const main = (
     <div>
       <NavBar />
@@ -47,7 +60,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" exact element={main} />
-            <Route path="login" element={<LoginView />} />
+            <Route path="login" element={<LoginView runFetch={runFetch} />} />
             <Route path="edit-profile" element={<EditProfileView />}>
               <Route path="projects" element={<EditProjects />} />
               <Route
