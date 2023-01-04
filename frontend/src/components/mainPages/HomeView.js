@@ -1,4 +1,5 @@
 import { MY_INFO } from "../../data/personal_info";
+import Modal from "../Modal/Modal";
 
 const HomeView = () => {
   return (
@@ -11,6 +12,7 @@ const HomeView = () => {
             <p>{MY_INFO.myDescription}</p>
           </div>
         </div>
+        <Modal />
       </div>
     </div>
   );

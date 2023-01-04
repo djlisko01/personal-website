@@ -42,10 +42,9 @@ function App() {
           <SocialLinks />
         </div>
         <div className="col-md-10">
-          <div className="col-10">
-            <AboutView />
-            <ResumeView />
-          </div>
+          <AboutView />
+          <ResumeView />
+
           <ProjectsView />
           <a href="/login"> Edit Profile</a>
         </div>

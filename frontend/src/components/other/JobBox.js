@@ -3,7 +3,7 @@ const JobBox = () => {
     <div className="jobBox">
       <h2 className="companyName"> This is a Job</h2>
       <span className="yearsWorking">2020 - 2022 </span>
-      <p className="jobDescription">
+      <p className="jobDescripcotion">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
         voluptates quidem vitae nulla praesentium, libero, ullam molestiae alias
         illum incidunt veniam reiciendis nesciunt sed deleniti commodi dolorem

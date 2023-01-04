@@ -28,7 +28,6 @@ const AboutView = () => {
       databases: { p: "Data Bases", color: "rgba(25, 130, 196, 0.1)" },
       other: { p: "other", color: "rgba(106, 76, 147, 0.1)" },
     };
-
     setShowSkill(test[currentSkill]);
   }, [currentSkill]);
 
@@ -46,13 +45,14 @@ const AboutView = () => {
 
         <div id="skills" className="row">
           <h2 className="mt-5">Full Stack Skills</h2>
-          <div className="skillCircleBlock mt-3 col-lg-8">
+          <div className="fullStackBlock d-flex justify-content-around mt-3 col-lg-8">
             <InfoCircle
               item={computerSVG}
               bgColor="#ff595e"
               newState="frontend"
               setState={setCurrentSkill}
             />
+
             <InfoCircle
               item={dataBaseSVG}
               bgColor="#ffca3a"
@@ -72,11 +72,11 @@ const AboutView = () => {
               bgColor="#6a4c93"
             />
           </div>
-          <div className="mt-3 font-weight-bold" style={{ fontSize: "1.4em" }}>
+          <div className=" mt-3 font-weight-bold" style={{ fontSize: "1.4em" }}>
             {currentSkill.toUpperCase()}
           </div>
           <div
-            className="mt-2 p-4 d-flex flex-row justify-content-center"
+            className="skillBlock mt-2 p-4 d-flex flex-row justify-content-center"
             style={{ backgroundColor: showSkill.color }}
           >
             {skillsListComponent}
