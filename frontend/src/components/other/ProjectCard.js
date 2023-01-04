@@ -1,8 +1,8 @@
 const ProjectCard = ({ isEditing, title, project_img, description }) => {
   return (
     <div
-      className="card col-md-3 m-md-1 d-flex align-content-end"
-      style={{ width: "18rem" }}
+      className="card m-sm-1"
+      style={{ maxWidth: "300px", minWidth: "300px" }}
     >
       {!isEditing ? (
         <img

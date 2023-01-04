@@ -16,7 +16,7 @@ const ProjectsView = () => {
     <div id="projects">
       <div className="container my-5 pt-5">
         <h2>Check out some of my projects...</h2>
-        <div className="row">{cardsList}</div>
+        <div className="row cardList">{cardsList}</div>
       </div>
     </div>
   );

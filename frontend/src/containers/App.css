@@ -59,6 +59,11 @@
   .socialContainer {
     display: none;
   }
+
+  .cardList {
+    justify-content: center;
+    
+  }
 }
 /* Resume Time Line */
 @media only screen and (min-width: 768px) {
