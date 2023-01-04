@@ -9,6 +9,7 @@ const ProjectsView = () => {
         project_img={project.img_url}
         description={project.description}
         tools={project.tools}
+        gitUrl={project.github}
       />
     );
   });

@@ -1,6 +1,12 @@
-const ProjectCard = ({ isEditing, title, project_img, description, tools }) => {
+const ProjectCard = ({
+  isEditing,
+  title,
+  project_img,
+  description,
+  tools,
+  gitUrl,
+}) => {
   const tags = tools.map((tool) => {
-    console.log(tool);
     return (
       <div
         className="badge badge-primary m-1"
@@ -12,8 +18,9 @@ const ProjectCard = ({ isEditing, title, project_img, description, tools }) => {
   });
 
   return (
-    <div
-      className="card m-sm-1"
+    <a
+      href={gitUrl}
+      className="card m-sm-1 gitAnchor"
       style={{ maxWidth: "300px", minWidth: "300px" }}
     >
       {!isEditing ? (
@@ -26,6 +33,7 @@ const ProjectCard = ({ isEditing, title, project_img, description, tools }) => {
       ) : (
         ""
       )}
+
       <div className="card-body p-0">
         <div className="p-2 mb-3 mt-3">
           <h5 className="card-title">{title}</h5>
@@ -35,7 +43,7 @@ const ProjectCard = ({ isEditing, title, project_img, description, tools }) => {
           {tags}
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
