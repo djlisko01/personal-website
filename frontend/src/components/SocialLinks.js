@@ -1,8 +1,10 @@
 import InfoCircle from "./other/InfoCircle";
 import { linkedInSVG, twitterSVG, githubSVG, emailSVG } from "../public/icons";
 
+
+
 const SocialLinks = ({ inlineStyle }) => {
-  const contactCircles = { height: "50px", width: "50px" };
+  const contactCircles = { height: "3em", width: "3em" };
   return (
     <div className="contactInfo" style={inlineStyle}>
       <a

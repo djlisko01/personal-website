@@ -1,5 +1,5 @@
 .homepage {
-  background-image: url("./public/imgs/water_sprite_lake.JPG");
+  background-image: url("../public/imgs/water_sprite_lake.JPG");
   background-size: cover;
   height: 100vh;
   color: white;
@@ -41,12 +41,6 @@
   top: 40vh;
 }
 
-/* .contactInfo .infoCircle:hover::after {
-  content: "Contact Me";
-  position: absolute;
-  left: 190px;
-} */
-
 .skillCircleBlock svg {
   height: 50px;
   width: 50px;
@@ -69,20 +63,21 @@
     overflow-y: scroll;
     scrollbar-width: none;
     overflow-x: hidden;
-    padding: 0 1%;
+    padding: 0 10px;
     height: 100vh;
   }
 
   #timeline::-webkit-scrollbar {
     display: none;
   }
+
   #timeline::before {
     content: "";
     height: 100%;
     position: absolute;
     width: 2px;
     background-color: orange;
-    left: 49.95%;
+    left: 50%;
   }
 
   #timeline .jobBox {
@@ -92,22 +87,23 @@
   #timeline .jobBox:nth-child(even) {
     float: left;
     clear: right;
-    right: 20px;
+    right: 25px;
   }
   #timeline .jobBox:nth-child(odd) {
     float: right;
     clear: left;
-    left: 20px;
+    left: 0px;
   }
+
   #timeline .jobBox:nth-child(even):before {
     content: "";
     height: 20px;
     width: 20px;
     background-color: orange;
     position: absolute;
-    right: -52px;
+    right: -18px;
     border-radius: 50%;
-    top: 0;
+    top: 30px;
   }
   #timeline .jobBox:nth-child(odd):before {
     content: "";
@@ -115,15 +111,16 @@
     width: 20px;
     background-color: orange;
     position: absolute;
-    left: -52px;
-    top: 0;
+    left: -29px;
+    top: 30px;
     border-radius: 50%;
   }
 }
 
-.card-body .btnDetails {
+.btnDetails {
   display: block;
   margin: auto auto;
+  margin-bottom: 10px;
   background: rgb(255, 89, 94, 0.7);
   border-radius: 25px;
   width: 70%;
@@ -134,7 +131,7 @@
   font-weight: bolder;
 }
 
-.card-body .btnDetails:hover {
+.btnDetails:hover {
   background: rgb(255, 89, 94, 1);
 }
 

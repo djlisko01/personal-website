@@ -7,37 +7,42 @@ import {
   forkLinkSVG,
 } from "../../public/icons";
 
+
+import { MY_INFO } from "../../data/personal_info";
+import Skill from "../other/Skill";
+
 const AboutView = () => {
+  const skills = MY_INFO.skills;
   const test = {
-    frontEnd: { p: "Front End", color: "rgba(255, 89, 94, 0.3)" },
-    backEnd: { p: "Back end", color: "#ffca3a" },
+    frontend: { p: "Front End", color: "rgba(255, 89, 94, 0.3)" },
+    backend: { p: "Back end", color: "#ffca3a" },
   };
-  const [currentSkill, setCurrentSkill] = useState("frontEnd");
+
+  const [currentSkill, setCurrentSkill] = useState("frontend");
   const [showSkill, setShowSkill] = useState(test[currentSkill]);
 
   useEffect(() => {
     const test = {
-      frontEnd: { p: "Front End", color: "rgba(255, 89, 94, 0.3)" },
-      backEnd: { p: "Back end", color: "rgba(255, 202, 58, 0.3)" },
-      dataBases: { p: "Data Bases", color: "rgba(25, 130, 196, 0.3)" },
-      other: { p: "other", color: "rgba(106, 76, 147, 0.3)" },
+      frontend: { p: "Front End", color: "rgba(255, 89, 94, 0.1)" },
+      backend: { p: "Back end", color: "rgba(255, 202, 58, 0.1)" },
+      databases: { p: "Data Bases", color: "rgba(25, 130, 196, 0.1)" },
+      other: { p: "other", color: "rgba(106, 76, 147, 0.1)" },
     };
 
     setShowSkill(test[currentSkill]);
   }, [currentSkill]);
 
+  console.log(skills[currentSkill]);
+
+  const skillsListComponent = skills[currentSkill].map((skill) => {
+    return <Skill skillName={skill.skill} skillIcon={skill.icon} />;
+  });
+
   return (
-    <div className="container aboutMe mt-5 pt-5" id="about-me">
+    <div className="container mt-5 pt-5" id="about-me">
       <div className="row">
         <h2>About Me</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-          assumenda porro, sed harum aliquid similique blanditiis! Assumenda
-          quod commodi aliquam, debitis fugit eius provident minima placeat
-          optio! Fuga perspiciatis dolore error enim tempore atque nam pariatur
-          ea molestias dolorem hic vitae eligendi laboriosam, sed sequi ipsam
-          consequatur. Est, consequatur? Voluptatibus?
-        </p>
+        <p>{MY_INFO.aboutMe}</p>
 
         <div id="skills" className="row">
           <h2 className="mt-5">Full Stack Skills</h2>
@@ -45,19 +50,19 @@ const AboutView = () => {
             <InfoCircle
               item={computerSVG}
               bgColor="#ff595e"
-              newState="frontEnd"
+              newState="frontend"
               setState={setCurrentSkill}
             />
             <InfoCircle
               item={dataBaseSVG}
               bgColor="#ffca3a"
-              newState="backEnd"
+              newState="backend"
               setState={setCurrentSkill}
             />
             <InfoCircle
               item={codeSVG}
               bgColor="#1982c4"
-              newState="dataBases"
+              newState="databases"
               setState={setCurrentSkill}
             />
             <InfoCircle
@@ -67,11 +72,14 @@ const AboutView = () => {
               bgColor="#6a4c93"
             />
           </div>
+          <div className="mt-3 font-weight-bold" style={{ fontSize: "1.4em" }}>
+            {currentSkill.toUpperCase()}
+          </div>
           <div
-            className="skillDescription mt-3 p-4"
+            className="mt-2 p-4 d-flex flex-row justify-content-center"
             style={{ backgroundColor: showSkill.color }}
           >
-            {showSkill.p}
+            {skillsListComponent}
           </div>
         </div>
       </div>

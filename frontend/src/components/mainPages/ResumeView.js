@@ -8,14 +8,6 @@ const ResumeView = () => {
           <JobBox />
           <JobBox />
           <JobBox />
-          <JobBox />
-          <JobBox />
-          <JobBox />
-          <JobBox />
-          <JobBox />
-          <JobBox />
-          <JobBox />
-          <JobBox />
         </div>
       </div>
     </div>

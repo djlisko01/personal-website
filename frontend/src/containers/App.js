@@ -1,18 +1,18 @@
 import "./App.css";
 //----------------- Import Components ------------//
-import HomeView from "./components/mainPages/HomeView";
-import NavBar from "./components/NavBar";
-import AboutView from "./components/mainPages/AboutView";
-import ResumeView from "./components/mainPages/ResumeView";
-import ProjectsView from "./components/mainPages/ProjectsView";
-import SocialLinks from "./components/SocialLinks";
-import LoginView from "./components/editPages/LoginView";
+import HomeView from "../components/mainPages/HomeView";
+import NavBar from "../components/NavBar";
+import AboutView from "../components/mainPages/AboutView";
+import ResumeView from "../components/mainPages/ResumeView";
+import ProjectsView from "../components/mainPages/ProjectsView";
+import SocialLinks from "../components/SocialLinks";
+import LoginView from "../components/editPages/LoginView";
 
 // Edit Page Components
-import EditProfileView from "./components/editPages/EditProfileView";
-import EditMain from "./components/editPages/EditMain";
-import EditProjects from "./components/editPages/EditProjects";
-import EditResume from "./components/editPages/EditResume";
+import EditProfileView from "../components/editPages/EditProfileView";
+import EditMain from "../components/editPages/EditMain";
+import EditProjects from "../components/editPages/EditProjects";
+import EditResume from "../components/editPages/EditResume";
 
 // External Packages
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -41,7 +41,6 @@ function App() {
         <div className="col-md-2 mt-5 socialContainer">
           <SocialLinks />
         </div>
-
         <div className="col-md-10">
           <div className="col-10">
             <AboutView />

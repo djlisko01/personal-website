@@ -1,5 +1,5 @@
 import "./other.css";
-import "../../App.css";
+import "../../containers/App";
 const InfoCircle = ({ item, height, width, bgColor, newState, setState }) => {
   const onHover = () => {
     setState(newState);
