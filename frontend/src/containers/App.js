@@ -7,7 +7,7 @@ import ResumeView from "../components/mainPages/ResumeView";
 import ProjectsView from "../components/mainPages/ProjectsView";
 import SocialLinks from "../components/SocialLinks";
 import LoginView from "../components/editPages/LoginView";
-
+import EmailForm from "../components/other/EmailForm";
 // Edit Page Components
 import EditProfileView from "../components/editPages/EditProfileView";
 import EditMain from "../components/editPages/EditMain";
@@ -44,9 +44,17 @@ function App() {
         <div className="col-md-10">
           <AboutView />
           <ResumeView />
-
           <ProjectsView />
-          <a href="/login"> Edit Profile</a>
+          <EmailForm />
+          <div id="contact-me">
+            <SocialLinks
+              inlineStyle={{
+                flexDirection: "row",
+                justifyContent: "center",
+                paddingBottom: "10px",
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>

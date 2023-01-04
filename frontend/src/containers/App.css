@@ -65,9 +65,22 @@
     
   }
 }
+
+#contact-me > .contactInfo >a:first-child{
+  display: none;
+ }
+
+
 /* Resume Time Line */
 @media only screen and (min-width: 768px) {
+
+  .contact-me {
+    display: none;
+  }
   
+  #contact-me {
+    display: none;
+   }
   
 
   #timeline {
@@ -143,7 +156,7 @@
   
 }
 
-.btnDetails {
+.redBtn {
   display: block;
   margin: auto auto;
   margin-bottom: 10px;
@@ -223,16 +236,20 @@
   gap: 30px;
 }
 
-.close-btn {
+.clearBtn {
   background: rgb(255, 89, 94, 0.7);
 }
 
-.save-btn {
+.sendBtn {
   background-color: #06d6a0;
 }
 
-.close-btn,
-.save-btn {
+.card:hover{
+  cursor: pointer;
+}
+
+.clearBtn,
+.sendBtn {
   border-radius: 25px;
   border: none;
   color: white;

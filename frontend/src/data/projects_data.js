@@ -39,7 +39,6 @@ export const PROJECTS = [
       "CSS",
       "Bootstrap",
       "HTML5",
-      "JS",
       "React",
       "MongoDB",
     ],

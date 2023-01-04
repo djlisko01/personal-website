@@ -7,13 +7,9 @@ const SocialLinks = ({ inlineStyle }) => {
   const contactCircles = { height: "3em", width: "3em" };
   return (
     <div className="contactInfo" style={inlineStyle}>
-      <a
-        href="https://www.google.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="#email-form" rel="noopener noreferrer">
         <InfoCircle
-          className="emailLink"
+          className="#emailLink"
           item={emailSVG}
           height={contactCircles.height}
           width={contactCircles.width}
