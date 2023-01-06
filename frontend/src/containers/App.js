@@ -68,7 +68,7 @@ function App() {
   return (
     <div className="App">
       <div className="container-fluid">
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route path="/" exact element={main} />
             <Route path="login" element={<LoginView runFetch={runFetch} />} />
