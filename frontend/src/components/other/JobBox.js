@@ -1,16 +1,14 @@
-const JobBox = () => {
+const JobBox = ({ jobTitle, company, startDate, endDate, description }) => {
   return (
     <div className="jobBox">
-      <h2 className="companyName"> This is a Job</h2>
-      <span className="yearsWorking">2020 - 2022 </span>
-      <p className="jobDescripcotion">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-        voluptates quidem vitae nulla praesentium, libero, ullam molestiae alias
-        illum incidunt veniam reiciendis nesciunt sed deleniti commodi dolorem
-        nisi sequi. Dignissimos facilis tempore, ex blanditiis eius quam hic
-        beatae maiores. Unde voluptas id doloribus sapiente veritatis aliquam
-        minima? Velit, molestiae corporis.
-      </p>
+      <h2 className="jobTitle mb-0 pb-0" style={{ color: "rgb(25, 130, 196)" }}>
+        {jobTitle}
+      </h2>
+      <p className="companyName mt-0 pt-0 text-muted"> {company}</p>
+      <span className="yearsWorking" style={{ fontWeight: "bolder" }}>
+        {startDate} - {endDate}
+      </span>
+      <div className="jobDescription">{description}</div>
     </div>
   );
 };

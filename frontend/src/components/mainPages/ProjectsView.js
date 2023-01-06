@@ -2,7 +2,8 @@ import ProjectCard from "../other/ProjectCard";
 import { PROJECTS } from "../../data/projects_data";
 
 const ProjectsView = () => {
-  const cardsList = PROJECTS.map((project) => {
+  const cardsList = PROJECTS.map((project, index) => {
+    console.log(index);
     return (
       <ProjectCard
         title={project.project_title}
@@ -10,6 +11,8 @@ const ProjectsView = () => {
         description={project.description}
         tools={project.tools}
         gitUrl={project.github}
+        index={index}
+        key={index}
       />
     );
   });

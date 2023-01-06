@@ -40,7 +40,7 @@ const NavBar = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#resume">
-                  Resume
+                  Experience
                 </a>
               </li>
               <li className="nav-item">
@@ -48,9 +48,20 @@ const NavBar = () => {
                   Projects
                 </a>
               </li>
+
               <li className="nav-item">
                 <a className="nav-link contact-me" href="#contact-me">
                   Contact Me
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link downloadResume"
+                  style={{ color: "#06D6A0", fontWeight: "bolder" }}
+                  href="Lisko_Resume_20220822_v2.pdf"
+                  download="lisko_resume.pdf"
+                >
+                  Download Resume
                 </a>
               </li>
             </ul>

@@ -39,9 +39,9 @@ const AboutView = () => {
 
   return (
     <div className="container mt-5 pt-5" id="about-me">
+      <h2>About Me</h2>
       <div className="row">
-        <h2>About Me</h2>
-        <p>{MY_INFO.aboutMe}</p>
+        {MY_INFO.aboutMe}
 
         <div id="skills" className="row">
           <h2 className="mt-5">Full Stack Skills</h2>

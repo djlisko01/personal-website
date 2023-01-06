@@ -7,7 +7,7 @@ import ResumeView from "../components/mainPages/ResumeView";
 import ProjectsView from "../components/mainPages/ProjectsView";
 import SocialLinks from "../components/SocialLinks";
 import LoginView from "../components/editPages/LoginView";
-import EmailForm from "../components/other/EmailForm";
+
 // Edit Page Components
 import EditProfileView from "../components/editPages/EditProfileView";
 import EditMain from "../components/editPages/EditMain";
@@ -38,15 +38,20 @@ function App() {
       <NavBar />
       <HomeView />
       <div className="row">
-        <div className="col-md-2 mt-5 socialContainer">
+        <div
+          className="col-md-2 mt-5 socialContainer"
+          style={{ maxWidth: "125px" }}
+        >
           <SocialLinks />
         </div>
         <div className="col-md-10">
           <AboutView />
           <ResumeView />
           <ProjectsView />
-          <EmailForm />
           <div id="contact-me">
+            <h2 className="mt-5" style={{ textAlign: "center" }}>
+              I'd love to connect with you!
+            </h2>
             <SocialLinks
               inlineStyle={{
                 flexDirection: "row",

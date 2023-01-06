@@ -13,6 +13,8 @@
   background-color: white;
 }
 
+
+
 .navbar {
   position: fixed;
   width: 100vw;
@@ -65,24 +67,24 @@
   .socialContainer {
     display: none;
   }
-
+  .contactInfo > .downloadResume {
+    display: none;
+  }
   .cardList {
     justify-content: center;
-    
   }
 }
 
-#contact-me > .contactInfo >a:first-child{
-  display: none;
- }
 
 
 /* Resume Time Line */
 @media only screen and (min-width: 768px) {
 
-  .contact-me {
+  .nav-item > .downloadResume {
     display: none;
   }
+
+  
   
   #contact-me {
     display: none;
@@ -250,8 +252,17 @@
   background-color: #06d6a0;
 }
 
+
 .card:hover{
   cursor: pointer;
+}
+
+.tool-tags {
+  visibility: collapse;
+}
+
+.card:hover > .card-body > .tool-tags {
+  visibility: visible;
 }
 
 .clearBtn,
@@ -288,3 +299,5 @@
   color: rgba(1, 1, 1, 0.7);
   font-weight: bold;
 }
+
+

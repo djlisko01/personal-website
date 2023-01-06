@@ -5,6 +5,7 @@ const ProjectCard = ({
   description,
   tools,
   gitUrl,
+  index,
 }) => {
   const tags = tools.map((tool) => {
     return (
@@ -19,12 +20,14 @@ const ProjectCard = ({
 
   return (
     <a
+      key={index}
       href={gitUrl}
       className="card m-sm-1 gitAnchor"
       style={{ maxWidth: "300px", minWidth: "300px" }}
     >
       {!isEditing ? (
         <img
+          key={index}
           src={project_img}
           className="card-img-top pt-2"
           style={{ height: "200px", width: "auto" }}
@@ -35,7 +38,7 @@ const ProjectCard = ({
       )}
 
       <div className="card-body p-0">
-        <div className="p-2 mb-3 mt-3">
+        <div className="p-2 mb-3 mt-3" key={"k" + index}>
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{description}</p>
         </div>

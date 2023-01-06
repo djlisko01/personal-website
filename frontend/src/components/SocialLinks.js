@@ -7,7 +7,7 @@ const SocialLinks = ({ inlineStyle }) => {
   const contactCircles = { height: "3em", width: "3em" };
   return (
     <div className="contactInfo" style={inlineStyle}>
-      <a href="#email-form" rel="noopener noreferrer">
+      <a href="mailto: djlisko01@gmail.com" rel="noopener noreferrer">
         <InfoCircle
           className="#emailLink"
           item={emailSVG}
@@ -15,13 +15,18 @@ const SocialLinks = ({ inlineStyle }) => {
           width={contactCircles.width}
         />
       </a>
-
-      <InfoCircle
-        className="twitterLink"
-        item={twitterSVG}
-        height={contactCircles.height}
-        width={contactCircles.width}
-      />
+      <a
+        href="https://twitter.com/danDaCoder"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <InfoCircle
+          className="twitterLink"
+          item={twitterSVG}
+          height={contactCircles.height}
+          width={contactCircles.width}
+        />
+      </a>
 
       <a
         href="https://github.com/djlisko01"
@@ -46,15 +51,23 @@ const SocialLinks = ({ inlineStyle }) => {
           width={contactCircles.width}
         />
       </a>
+      <a
+        className="downloadResume social"
+        href="Lisko_Resume_20220822_v2.pdf"
+        download="lisko_resume.pdf"
+      >
+        <button className="sendBtn">Resume</button>
+      </a>
     </div>
   );
 };
 
 SocialLinks.defaultProps = {
   inlineStyle: {
+    alignContent: "center",
     justifyContent: "center",
-    flexDirection: "column",
-    paddingLeft: "40%",
+    flexDirection: "row",
+    flexWrap: "wrap",
   },
 };
 
