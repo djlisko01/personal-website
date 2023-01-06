@@ -3,7 +3,7 @@ import { PROJECTS } from "../../data/projects_data";
 
 const ProjectsView = () => {
   const cardsList = PROJECTS.map((project, index) => {
-    console.log(index);
+
     return (
       <ProjectCard
         title={project.project_title}

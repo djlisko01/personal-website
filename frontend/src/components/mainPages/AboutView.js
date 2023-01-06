@@ -31,8 +31,6 @@ const AboutView = () => {
     setShowSkill(test[currentSkill]);
   }, [currentSkill]);
 
-  console.log(skills[currentSkill]);
-
   const skillsListComponent = skills[currentSkill].map((skill) => {
     return <Skill skillName={skill.skill} skillIcon={skill.icon} />;
   });
