@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/personal-webpage/static/css/main.ff2d49a1.css",
-    "main.js": "/personal-webpage/static/js/main.cfb6cd8a.js",
-    "static/js/787.cda612ba.chunk.js": "/personal-webpage/static/js/787.cda612ba.chunk.js",
-    "static/media/water_sprite_lake.JPG": "/personal-webpage/static/media/water_sprite_lake.5993a68e8bac2b5a9ed8.JPG",
-    "index.html": "/personal-webpage/index.html",
-    "main.ff2d49a1.css.map": "/personal-webpage/static/css/main.ff2d49a1.css.map",
-    "main.cfb6cd8a.js.map": "/personal-webpage/static/js/main.cfb6cd8a.js.map",
-    "787.cda612ba.chunk.js.map": "/personal-webpage/static/js/787.cda612ba.chunk.js.map"
+    "main.css": "/personal-website/static/css/main.fd46915d.css",
+    "main.js": "/personal-website/static/js/main.d24fb0db.js",
+    "static/js/787.cda612ba.chunk.js": "/personal-website/static/js/787.cda612ba.chunk.js",
+    "static/media/water_sprite_lake.JPG": "/personal-website/static/media/water_sprite_lake.5993a68e8bac2b5a9ed8.JPG",
+    "index.html": "/personal-website/index.html",
+    "main.fd46915d.css.map": "/personal-website/static/css/main.fd46915d.css.map",
+    "main.d24fb0db.js.map": "/personal-website/static/js/main.d24fb0db.js.map",
+    "787.cda612ba.chunk.js.map": "/personal-website/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff2d49a1.css",
-    "static/js/main.cfb6cd8a.js"
+    "static/css/main.fd46915d.css",
+    "static/js/main.d24fb0db.js"
   ]
 }
