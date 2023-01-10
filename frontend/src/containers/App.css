@@ -73,24 +73,29 @@
   .cardList {
     justify-content: center;
   }
+  .techIcon{
+    transform: scale(0.85);
+  }
+
+  .fullStackBlock > .infoCircle{
+    transform: scale(0.75);
+  }
+
 }
+
 
 
 
 /* Resume Time Line */
 @media only screen and (min-width: 768px) {
-
-  .nav-item > .downloadResume {
-    display: none;
+  .tool-tags {
+    visibility: collapse;
   }
 
-  
-  
-  #contact-me {
+  .nav-item > .downloadResume, .contact-me  {
     display: none;
-   }
+  }
   
-
   #timeline {
     overflow-y: scroll;
     scrollbar-width: none;
@@ -205,9 +210,6 @@
 }
 
 
-
-
-
 /* Modal */
 .add-modal {
   position: fixed;
@@ -255,10 +257,6 @@
 
 .card:hover{
   cursor: pointer;
-}
-
-.tool-tags {
-  visibility: collapse;
 }
 
 .card:hover > .card-body > .tool-tags {

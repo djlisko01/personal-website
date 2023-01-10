@@ -52,13 +52,13 @@ const AboutView = () => {
             />
 
             <InfoCircle
-              item={dataBaseSVG}
+              item={codeSVG}
               bgColor="#ffca3a"
               newState="backend"
               setState={setCurrentSkill}
             />
             <InfoCircle
-              item={codeSVG}
+              item={dataBaseSVG}
               bgColor="#1982c4"
               newState="databases"
               setState={setCurrentSkill}
@@ -74,7 +74,7 @@ const AboutView = () => {
             {currentSkill.toUpperCase()}
           </div>
           <div
-            className="skillBlock mt-2 p-4 d-flex flex-row justify-content-center"
+            className="skillBlock mt-2 p-4 d-flex flex-row justify-content-center ml-3"
             style={{ backgroundColor: showSkill.color }}
           >
             {skillsListComponent}

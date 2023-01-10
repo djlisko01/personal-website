@@ -1,6 +1,13 @@
 import { AiFillHtml5, React, AiFillGithub } from "react-icons/ai";
 import { DiReact, DiMongodb, DiCss3, DiRedis } from "react-icons/di";
-import { SiNodedotjs, SiSqlite, SiJavascript } from "react-icons/si";
+import {
+  SiNodedotjs,
+  SiSqlite,
+  SiJavascript,
+  SiExpress,
+  SiFirebase,
+  SiHeroku,
+} from "react-icons/si";
 import { FaBootstrap, FaJira, FaPython } from "react-icons/fa";
 
 export const MY_INFO = {
@@ -43,21 +50,24 @@ export const MY_INFO = {
       },
       { skill: "React JS", icon: <DiReact /> },
       { skill: "Bootstrap", icon: <FaBootstrap /> },
+      { skill: "CSS3", icon: <DiCss3 /> },
     ],
     backend: [
       { skill: "Node JS", icon: <SiNodedotjs /> },
-      { skill: "CSS", icon: <DiCss3 /> },
+      { skill: "Express JS", icon: <SiExpress /> },
     ],
     databases: [
       { skill: "MongoDB", icon: <DiMongodb /> },
       { skill: "SQLite", icon: <SiSqlite /> },
       { skill: "Redis", icon: <DiRedis /> },
+      { skill: "Firebase", icon: <SiFirebase /> },
     ],
     other: [
       { skill: "GitHub", icon: <AiFillGithub /> },
       { skill: "Jira", icon: <FaJira /> },
       { skill: "Python", icon: <FaPython /> },
       { skill: "JavaScript", icon: <SiJavascript /> },
+      { skill: "Heroku", icon: <SiHeroku /> },
     ],
   },
 };

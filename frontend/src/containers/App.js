@@ -48,7 +48,7 @@ function App() {
           <AboutView />
           <ResumeView />
           <ProjectsView />
-          <div id="contact-me">
+          <div className="contact-me">
             <h2 className="mt-5" style={{ textAlign: "center" }}>
               I'd love to connect with you!
             </h2>

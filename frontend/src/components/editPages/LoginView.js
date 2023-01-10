@@ -5,7 +5,6 @@ function LoginView({ runFetch }) {
 
   const onKey = (event) => {
     const { name, value } = event.target;
-    console.log(name, value);
     setUserCred({ ...userCred, [name]: value });
   };
 
@@ -16,7 +15,7 @@ function LoginView({ runFetch }) {
     if (event.target.name === "clear-content") {
       setUserCred({ username: "", password: "" });
     } else {
-      console.log("===> userCred", userCred);
+
       const res = await runFetch(targetName, userCred);
       console.log("res==>", res);
     }

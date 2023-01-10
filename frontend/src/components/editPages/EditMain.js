@@ -9,7 +9,7 @@ function EditMain({ showModal, setShowModal }) {
 
   const saveData = (event) => {
     event.preventDefault();
-    console.log(profileData);
+
   };
 
   const handleChange = (event) => {
