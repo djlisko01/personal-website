@@ -6,7 +6,7 @@ import { linkedInSVG, twitterSVG, githubSVG, emailSVG } from "../public/icons";
 const SocialLinks = ({ inlineStyle }) => {
   const contactCircles = { height: "3em", width: "3em" };
   return (
-    <div className="contactInfo" style={inlineStyle}>
+    <div className="contactInfo" id="social-links" style={inlineStyle}>
       <a href="mailto: djlisko01@gmail.com" rel="noopener noreferrer">
         <InfoCircle
           className="#emailLink"
@@ -53,7 +53,7 @@ const SocialLinks = ({ inlineStyle }) => {
       </a>
       <a
         className="downloadResume social"
-        href="Lisko_Resume_20220822_v2.pdf"
+        href="Lisko_Resume_20230205.pdf"
         download="lisko_resume.pdf"
       >
         <button className="sendBtn">Resume</button>

@@ -92,7 +92,7 @@
     visibility: collapse;
   }
 
-  .nav-item > .downloadResume, .contact-me  {
+  .nav-item > .downloadResume, .nav-contact  {
     display: none;
   }
   

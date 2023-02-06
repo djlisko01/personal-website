@@ -49,7 +49,7 @@ function App() {
           <ResumeView />
           <ProjectsView />
           <div className="contact-me">
-            <h2 className="mt-5" style={{ textAlign: "center" }}>
+            <h2 className="mt-5" id="bottom" style={{ textAlign: "center" }}>
               I'd love to connect with you!
             </h2>
             <SocialLinks
